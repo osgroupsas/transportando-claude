@@ -41,7 +41,7 @@ Ejemplos de preguntas:
 
 ## Cómo se conecta
 
-El plugin declara un solo servidor MCP remoto: `https://api.transportando.com.co/mcp`. La primera vez que Claude lo usa, abre la página de Transportando para que inicies sesión y autorices el acceso con OAuth 2.0 (PKCE). Puedes revocar la conexión cuando quieras desde **Conexiones MCP** en el menú de usuario del TMS.
+El plugin declara un solo servidor MCP remoto: `https://mcp.transportando.com.co/mcp`. La primera vez que Claude lo usa, abre la página de Transportando para que inicies sesión y autorices el acceso con OAuth 2.0 (PKCE). Puedes revocar la conexión cuando quieras desde **Conexiones MCP** en el menú de usuario del TMS.
 
 ## Qué datos se envían
 
