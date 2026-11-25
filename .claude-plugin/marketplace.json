@@ -1,0 +1,15 @@
+{
+  "name": "transportando",
+  "owner": {
+    "name": "Transportando",
+    "url": "https://transportando.com.co"
+  },
+  "description": "Plugin de Transportando para operar el TMS desde Claude.",
+  "plugins": [
+    {
+      "name": "transportando",
+      "source": "./",
+      "description": "Herramientas y habilidades de Transportando para Claude."
+    }
+  ]
+}

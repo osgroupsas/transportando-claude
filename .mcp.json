@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "transportando": { "type": "http", "url": "https://api.transportando.com.co/mcp" }
+  }
+}

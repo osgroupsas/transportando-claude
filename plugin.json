@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "transportando",
+  "version": "0.8.0",
+  "description": "Opera Transportando desde el chat: crea y actualiza conductores y vehículos desde documentos, viajes y órdenes de cargue con guías; autoriza, cumple y factura manifiestos; revisa la rentabilidad de las solicitudes de facturación, las factura y edita la factura; registra facturas CxC y CxP con soportes; consulta y diagnostica documentos, y responde cuánto ha facturado o movido un carro, la facturación por cliente, agencia, placa o comercial, lo pendiente por facturar, la cartera, los vehículos en monitoreo o disponibles y los empleados, siempre con confirmación para los cambios.",
+  "author": {
+    "name": "Transportando",
+    "url": "https://transportando.com.co"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["transporte", "manifiestos", "RNDC", "facturación", "TMS"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Transportando",
+        "shortDescription": "Opera tu transporte de carga mediante conversación",
+        "developerName": "Transportando",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://transportando.com.co",
+        "defaultPrompt": [
+          "¿Qué manifiestos de hoy están pendientes por autorizar?",
+          "Crea este conductor con los datos de su cédula y licencia.",
+          "Prepara un viaje como el manifiesto 45-26, con nuevas fechas.",
+          "Factura los manifiestos de este listado con fecha de hoy.",
+          "¿Cuánto facturó la placa ABC123 el mes pasado, por cliente?",
+          "¿Cómo fue la facturación por agencia el mes pasado?",
+          "Registra la cuenta por pagar de esta factura del proveedor.",
+          "¿Qué solicitudes de facturación completadas hay de este cliente esta semana y su rentabilidad?"
+        ]
+      }
+    }
+  }
+}
