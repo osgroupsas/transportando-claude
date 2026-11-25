@@ -48,7 +48,6 @@ El plugin declara un solo servidor MCP remoto: `https://mcp.transportando.com.co
 - Claude envía al servidor de Transportando solo los argumentos de cada herramienta que usa, por ejemplo un número de manifiesto, una placa o los datos extraídos de un documento que tú adjuntaste.
 - El servidor responde con los datos de tu empresa a los que tu usuario ya tiene acceso en el TMS.
 - El plugin no envía datos a ningún otro servicio, no ejecuta comandos en tu equipo y no incluye ganchos (hooks).
-- La carpeta `cli/` trae un cliente opcional de línea de comandos para desarrolladores. Claude no lo ejecuta; si lo usas, guarda tus credenciales OAuth en `~/.config/transportando-mcp` y solo se comunica con el mismo servidor.
 
 ## Privacidad
 
