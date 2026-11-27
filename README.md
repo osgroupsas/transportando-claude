@@ -19,19 +19,20 @@ La primera vez que uses una herramienta, Claude abre Transportando para que inic
 
 ## Qué puedes hacer
 
-| Habilidad                  | Para qué sirve                                                                                                                         |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `crear-viaje`              | Preparar y crear una orden de carga, una remesa y un manifiesto, o copiar un viaje anterior con nuevas fechas.                         |
-| `crear-orden-cargue`       | Crear una orden de cargue con sus guías, recogidas, entregas y temperatura a partir de un correo o un archivo.                         |
-| `crear-ficha-maestra`      | Crear o actualizar conductores, proveedores, clientes y vehículos desde una cédula, licencia, tarjeta de propiedad o SOAT.             |
-| `autorizar-manifiestos`    | Consultar los manifiestos pendientes de autorización RNDC y autorizarlos uno a uno o en lote.                                          |
-| `cumplir-manifiestos`      | Registrar en lote los cumplidos RNDC de manifiestos autorizados.                                                                       |
-| `facturar-manifiestos`     | Crear borradores de factura CxC de uno o varios manifiestos.                                                                           |
-| `facturar-solicitudes`     | Revisar la rentabilidad de las solicitudes de facturación, facturarlas y editar la factura.                                            |
-| `registrar-facturas`       | Registrar facturas CxC directas o facturas de proveedor CxP con sus soportes.                                                          |
-| `anular-viaje`             | Anular una orden de cargue o un manifiesto con sus documentos relacionados.                                                            |
-| `consultar-y-diagnosticar` | Consultar manifiestos, vehículos, terceros y precintos, y diagnosticar por qué falló una operación.                                    |
-| `consultar-indicadores`    | Responder cuánto facturó o movió un vehículo, la facturación por cliente, agencia o comercial, lo pendiente por facturar y la cartera. |
+| Habilidad                   | Para qué sirve                                                                                                                         |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `crear-viaje`               | Preparar y crear una orden de carga, una remesa y un manifiesto, o copiar un viaje anterior con nuevas fechas.                         |
+| `crear-orden-cargue`        | Crear una orden de cargue con sus guías, recogidas, entregas y temperatura a partir de un correo o un archivo.                         |
+| `crear-ficha-maestra`       | Crear o actualizar conductores, proveedores, clientes y vehículos desde una cédula, licencia, tarjeta de propiedad o SOAT.             |
+| `autorizar-manifiestos`     | Consultar los manifiestos pendientes de autorización RNDC y autorizarlos uno a uno o en lote.                                          |
+| `cumplir-manifiestos`       | Registrar en lote los cumplidos RNDC de manifiestos autorizados.                                                                       |
+| `facturar-manifiestos`      | Crear borradores de factura CxC de uno o varios manifiestos.                                                                           |
+| `facturar-solicitudes`      | Revisar la rentabilidad de las solicitudes de facturación, facturarlas y editar la factura.                                            |
+| `registrar-facturas`        | Registrar facturas CxC directas o facturas de proveedor CxP con sus soportes.                                                          |
+| `completar-enviar-facturas` | Completar facturas CxC o CxP y enviar las CxC a la DIAN y al RNDC, con una sola confirmación.                                          |
+| `anular-viaje`              | Anular una orden de cargue o un manifiesto con sus documentos relacionados.                                                            |
+| `consultar-y-diagnosticar`  | Consultar manifiestos, vehículos, terceros y precintos, y diagnosticar por qué falló una operación.                                    |
+| `consultar-indicadores`     | Responder cuánto facturó o movió un vehículo, la facturación por cliente, agencia o comercial, lo pendiente por facturar y la cartera. |
 
 Ejemplos de preguntas:
 

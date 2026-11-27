@@ -1,7 +1,7 @@
 {
   "name": "transportando",
-  "version": "0.8.2",
-  "description": "Opera Transportando desde el chat: crea conductores y vehículos desde documentos, viajes y órdenes de cargue; autoriza, cumple y factura manifiestos; revisa la rentabilidad de las solicitudes de facturación y las factura; registra facturas CxC y CxP con soportes; diagnostica documentos y responde cuánto facturó o movió un carro, la facturación por cliente o agencia, lo pendiente por facturar y la cartera. Pide confirmación antes de cada cambio.",
+  "version": "0.9.0",
+  "description": "Opera Transportando desde el chat: crea conductores y vehículos desde documentos, viajes y órdenes de cargue; autoriza, cumple y factura manifiestos; revisa y factura solicitudes de facturación; registra facturas CxC y CxP con soportes, las completa y envía a la DIAN y al RNDC; diagnostica documentos y responde cuánto facturó o movió un carro, la facturación por cliente o agencia, lo pendiente por facturar y la cartera. Pide confirmación antes de cada cambio.",
   "author": {
     "name": "Transportando",
     "url": "https://transportando.com.co"
