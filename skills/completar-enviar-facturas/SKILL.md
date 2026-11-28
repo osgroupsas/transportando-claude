@@ -1,20 +1,23 @@
 ---
 name: completar-enviar-facturas
-description: Úsala cuando el usuario pida completar facturas CxC o CxP en borrador, enviar una factura a la DIAN como factura electrónica o reportarla al RNDC en Transportando (por ejemplo FE-1520). Muestra los pasos de cada factura, explica las que no se pueden procesar y pide una sola confirmación.
+description: Úsala cuando el usuario pida completar facturas CxC o CxP, notas crédito o débito CxC o documentos soporte en borrador, enviarlos a la DIAN como documento electrónico o reportar una factura al RNDC en Transportando (por ejemplo FE-1520 o NC-40). Muestra los pasos de cada documento, explica los que no se pueden procesar y pide una sola confirmación.
 ---
 
 # Completar y enviar facturas
 
 Usa las herramientas del MCP Transportando conectado.
 
-1. Reúne los números visibles de las facturas (por ejemplo FE-1520), hasta 20
-   por preparación. Si el usuario no da números, pregúntalos; no los inventes ni
+1. Reúne los números visibles de los documentos (por ejemplo FE-1520), hasta 20
+   por preparación y todos del mismo tipo; si el usuario mezcla tipos, prepara
+   uno por tipo. Si el usuario no da números, pregúntalos; no los inventes ni
    los busques por valor.
 2. Define el tipo y el último paso que pidió el usuario:
-   - `tipo`: `CXC` para facturas de venta a clientes, `CXP` para facturas de
-     proveedor. Si no es claro, pregúntalo.
+   - `tipo`: `CXC` factura de venta, `NCC` nota crédito CxC, `DCC` nota débito
+     CxC, `CXP` factura de proveedor o `DS` documento soporte. Si no es claro,
+     pregúntalo.
    - `hasta`: `COMPLETAR` (solo completar), `DIAN` (completar si hace falta y
-     enviar a la DIAN) o `RNDC` (además reportar al RNDC). Una CxP solo admite
+     enviar a la DIAN) o `RNDC` (además reportar la factura CxC al RNDC). Las
+     notas CxC y el documento soporte llegan hasta la DIAN; una CxP solo admite
      `COMPLETAR`.
    - `incluir_adjuntos`: por defecto se envían a la DIAN los adjuntos de la
      factura, como en el TMS. Usa `false` solo si el usuario pide no enviarlos.
@@ -24,8 +27,8 @@ Usa las herramientas del MCP Transportando conectado.
 4. Muestra en una tabla las facturas listas con fecha, tercero, total en pesos
    (con símbolo y separadores de miles) y pasos, y el total. Debajo, las
    omitidas con su motivo. Explica los efectos que devuelve la preparación; en
-   especial, que enviar a la DIAN no se puede deshacer y solo se corrige con una
-   nota crédito.
+   especial, que enviar a la DIAN no se puede deshacer. Una nota no se envía
+   mientras la factura que corrige no esté en la DIAN.
 5. Pide una sola confirmación explícita. Después llama
    `completar_enviar_facturas` con el `operacion_id`, la `version` y la
    `huella_documento` de la preparación.
@@ -39,6 +42,7 @@ Usa las herramientas del MCP Transportando conectado.
    `operacion_id` y pide al usuario revisar la factura en el TMS antes de
    reintentar.
 
-Requiere `DOCUMENTO?CXC/ACTUALIZAR` o `DOCUMENTO?CXP/ACTUALIZAR`, una conexión
-con escritura y, para la DIAN y el RNDC, el módulo de facturación electrónica.
+Requiere el permiso `DOCUMENTO?<tipo>/ACTUALIZAR` del tipo de documento (por
+ejemplo `DOCUMENTO?NCC/ACTUALIZAR`), una conexión con escritura y, para la DIAN
+y el RNDC, el módulo de facturación electrónica.
 Muestra números de factura y nombres, nunca IDs ni huellas.
